@@ -41,7 +41,7 @@ nav a:hover{
   color: black;
 }
 
-/* -------MAIN page - LANDING ------*/
+/* -------MAIN page - LANDING -------*/
 #landing{
   background-color: lightgray; /*temporary style DELETE*/
   background-image: linear-gradient( rgba(100, 100, 100, .2), rgba(100, 100, 100, .75) ), url("../img/deal.jpg");
