@@ -104,14 +104,20 @@ nav a:hover{
   transition: background-color .75s ease-in-out;
   -moz-transition: background-color .75s ease-in-out;
   -webkit-transition: background-color .75s ease-in-out;
-
 }
 
 #start:hover, #learn:hover{
-  background-color: salmon;
+  background-color: #f2f2f2;
   transition: background-color .25s ease-in-out;
   -moz-transition: background-color .25s ease-in-out;
   -webkit-transition: background-color .25s ease-in-out;
+}
+
+#start:hover, #learn:hover{
+  box-shadow: 25px 25px 25px lightgray;
+  transition: box-shadow .75s ease-in-out;
+  -moz-transition: box-shadow .75s ease-in-out;
+  -webkit-transition: box-shadow .75s ease-in-out;
 }
 
 #start h1, #learn h1{
@@ -119,7 +125,7 @@ nav a:hover{
   font-size: 40px;
   color: gray;
   letter-spacing: 8px;
-  margin: 45px 0;
+  margin: 55px 0;
 }
 
 #start img, #learn img{
@@ -132,7 +138,7 @@ nav a:hover{
   color: black;
   font-size: 35px;
   font-weight: bold;
-  margin: 50px 0 30px 0;
+  margin: 60px 0 40px 0;
   padding-left: 40px;
   width: 100%;
 }
@@ -141,7 +147,7 @@ nav a:hover{
   color: black;
   font-size: 35px;
   font-weight: bold;
-  margin: 50px 0 30px 0;
+  margin: 60px 0 40px 0;
   padding-right: 40px;
   width: 100%;
   text-align: right;
@@ -152,7 +158,7 @@ nav a:hover{
   padding: 0 40px 0 40px;
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 #learn p{
@@ -163,43 +169,114 @@ nav a:hover{
 #main-about{
   width: 100%;
   background-color: #f2f2f2;
-  padding: 40px;
+  padding: 100px;
 }
 
 #main-about h1{
   font-size: 35px;
   font-weight: bold;
-  border-bottom: 5px solid salmon;
+  border-bottom: 5px solid lightgray;
   width: 300px;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 #main-about p{
   font-size: 18px;
-  line-height: 25px;
+  line-height: 35px;
 }
 
 /* ---------------MAIN PAGE - MEDIA CATEGORIES-------------- */
 #categories{
   width: 100%;
-  height: 500px;
-  padding: 50px;
+  height: auto;
+  padding: 70px;
   overflow: hidden;
-  flex-wrap: wrap;
+
 }
 
 .categories-contain{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 20px;
+  flex-wrap: wrap;
+  padding: 0 30px;
   margin: 30px;
+  height: auto;
 }
 
 .media-types{
-  margin: 20px;
-  width: 100px;
-  height: 100px;
-  border: 2px solid salmon;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  margin: 30px;
+  border: 2px solid lightgray;
+  box-shadow: 25px 25px 25px lightgray;
+}
+
+/* ----------MAIN PAGE - STAFF PROFILE PICS--------- */
+#staff{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#mentors, #instructors{
+  width: 50%;
+}
+
+#mentors h1, #instructors h1{
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+  /* margin: 60px 0 40px 0; */
+  padding-left: 40px;
+  width: 100%;
+}
+
+#mentors p, #instructors p{
+  padding: 40px;
+  line-height: 30px;
+}
+
+.prof-pic-container{
+  width: 300px;
+  height: 200px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.prof-pic{
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border: 3px solid gray;
+  border-radius: 100%;
+}
+
+.prof-pic-front{
+  background-color: lightgray;
+  position: relative;
+  left: 100px;
+  z-index: 3;
+}
+
+.prof-pic-mid{
+  background-color: darkgray;
+  /* position: relative; */
+  /* left: -200px; */
+  z-index: 2;
+}
+
+.prof-pic-back{
+  background-color: gray;
+  position: relative;
+  left: -100px;
+  z-index: 1;
 }
