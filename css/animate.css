@@ -2250,6 +2250,29 @@
   animation-name: rotateInDownLeft;
 }
 
+@keyframes rotateInDownLeft-slow {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -80deg);
+    transform: rotate3d(0, 0, 1, -80deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.rotateInDownLeft-slow {
+  -webkit-animation-name: rotateInDownLeft-slow;
+  animation-name: rotateInDownLeft-slow;
+}
+
 @-webkit-keyframes rotateInDownRight {
   from {
     -webkit-transform-origin: right bottom;

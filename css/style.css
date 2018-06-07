@@ -78,7 +78,6 @@ nav a:hover{
 
 #greeting{
   color: white;
-  overflow: hidden;
   float: right;
   margin-top: 50px;
   margin-right: 10%;
@@ -222,20 +221,18 @@ nav a:hover{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #mentors, #instructors{
-  width: 50%;
+  width: 500px;
 }
 
 #mentors h1, #instructors h1{
   color: black;
   font-size: 35px;
   font-weight: bold;
-  /* margin: 60px 0 40px 0; */
-  padding-left: 40px;
-  width: 100%;
+  padding-left: 10px;
 }
 
 #mentors p, #instructors p{
@@ -243,21 +240,32 @@ nav a:hover{
   line-height: 30px;
 }
 
-.prof-pic-container{
-  width: 300px;
+.mentor-pic-container{
+  margin-left: -200px;
+}
+
+.instructor-pic-container{
+  margin-left: -80px;
+}
+
+.mentor-pic-container, .instructor-pic-container{
+  width: 50%;
   height: 200px;
-  padding: 0 20px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .prof-pic{
   flex-shrink: 0;
   width: 200px;
   height: 200px;
-  border: 3px solid gray;
   border-radius: 100%;
+  border: 3px solid white;
+}
+
+.prof-pic:hover{
+  z-index: 4;
 }
 
 .prof-pic-front{
@@ -269,9 +277,14 @@ nav a:hover{
 
 .prof-pic-mid{
   background-color: darkgray;
-  /* position: relative; */
-  /* left: -200px; */
   z-index: 2;
+}
+
+.prof-pic-mid-left{
+  z-index: 2;
+  background: darkgray;
+  position: relative;
+  left: 200px;
 }
 
 .prof-pic-back{
@@ -279,4 +292,127 @@ nav a:hover{
   position: relative;
   left: -100px;
   z-index: 1;
+}
+
+/* --------MAIN PAGE - REQUEST INFO---------- */
+#request{
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+#request-left{
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+#request-right{
+  width: 350px;
+}
+
+#request h1{
+  text-align: center;
+  color: gray;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#request p{
+  margin-top: 30px;
+  line-height: 40px;
+}
+
+#request input[type=text], select {
+    font-size: 20px;
+    width: 100%;
+    padding: 1px 20px;
+    margin: 18px 0;
+    display: inline-block;
+    border: 0 solid black;
+    box-sizing: border-box;
+    background-color: inherit;
+    border-bottom: 2px solid white;
+}
+
+#request ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+
+#request input[type=submit] {
+    color: white;
+    width: 70%;
+    font-size: 25px;
+    background-color: inherit;
+    padding: 14px 20px;
+    margin: 30px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+#request input[type=submit]:hover {
+    background-color: white;
+    color: lightgray;
+}
+
+/* ---------MAIN-PAGE - FOOTER-------- */
+#contact{
+  background-image: url("https://million-wallpapers.com/wallpapers/3/1/481902161871724.jpg");
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#social{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin-top: 30px;
+}
+
+#social h1{
+  font-size: 30px;
+  margin: 30px;
+  font-weight: bold;
+}
+
+#social a{
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin: 10px;
+  background-color: lightgray;
+  display: inline-block;
+  border: 2px solid salmon;
+}
+
+#contact h2{
+  font-size: 20px;
+  color: white;
+  padding: 20px 0px 10px 20px;
+  line-height: 45px;
+}
+
+#contact span{
+  font-size: 20px;
+  color: salmon;
+  padding: 0 5px 0 20px;
+}
+
+#contact p{
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+#contact a{
+  font-size: 20px;
+  color: white;
+  text-decoration: underline;
 }

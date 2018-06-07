@@ -27,13 +27,13 @@
           </div>
         </div>
         <div id="greeting">
-          <h1>Lorem Ipsum</h1>
-          <h2>Lorem sub text ipsum</h2>
+          <h1 class="animated rotateInDownLeft">Lorem Ipsum</h1>
+          <h2 class="animated rotateInDownLeft-slow">Lorem sub text ipsum</h2>
         </div>
       </section>
 
       <section id="choose-path" class="container.fluid">
-        <div class="row" >
+        <div class="row">
           <a  id="start-link" href="#">
             <div id="start" class="col-xs-6">
               <h1>Start</h1>
@@ -72,12 +72,12 @@
         </div>
       </section>
 
-      <section id="staff">
+    <section id="staff">    <!-- -----NEED TO FIX WRAPPING ISSUE HERE---- -->
         <div id="mentors">
           <h1>Mentors</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          <div class="prof-pic-container">
-            <div class="prof-pic prof-pic-mid"></div>
+          <div class="mentor-pic-container">
+            <div class="prof-pic prof-pic-mid-left"></div>
             <div class="prof-pic prof-pic-front"></div>
             <div class="prof-pic prof-pic-mid"></div>
             <div class="prof-pic prof-pic-back"></div>
@@ -86,22 +86,46 @@
         <div id="instructors">
           <h1>Instructors</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          <div class="prof-pic-container">
+          <div class="instructor-pic-container">
             <div class="prof-pic prof-pic-front"></div>
             <div class="prof-pic prof-pic-mid"></div>
             <div class="prof-pic prof-pic-back"></div>
           </div>
         </div>
-
       </section>
 
-      <section id="request-info">
+      <section id="request">
+        <div id="request-left">
+          <h1>Request more info</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+        <div id="request-right">
+          <form action="#.php">
+            <input type="text" id="request-name" name="name" placeholder="NAME">
+            <input type="text" id="request-email" name="email" placeholder="EMAIL">
+            <input type="submit" value="Submit">
+          </form>
+        </div>
       </section>
-
     </main>
 
     <footer>
       <section id="contact">
+        <div id="social">
+          <h1>We're social!</h1>
+          <div>
+            <a href="#"><div class="social-icon"></div></a>
+            <a href="#"><div class="social-icon"></div></a>
+            <a href="#"><div class="social-icon"></div></a>
+            <a href="#"><div class="social-icon"></div></a>
+          </div>
+        </div>
+        <div>
+          <h2>CONTACT</h2>
+          <p><span>Address:</span> 123 Lorem Ipsum Ln. Austin, Texas <span>  Phone:</span> (512) 512-5123 <span>|</span>
+            <a id="email-us" href="mailto:webmaster@example.com">Email Us</a>
+          </p>
+        </div>
       </section>
     </footer>
   </body>
