@@ -20,7 +20,6 @@
 
       <section id="incu-landing">
         <div id="incu-greeting">
-          <!-- <h1>Request more info</h1> -->
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
           <p>Get Started<span>!</span></p>
         </div>
@@ -30,10 +29,10 @@
               <input class="col-xs-8" style="" type="text" id="request-email" name="email" placeholder="Email">
               <input class="col-xs-3" type="submit" value="Submit">
             </div>
-              <p>- Or -</p>
+              <p>OR</p>
             <div class="col-xs-10 col-md-6">
               <input class="col-xs-8" type="text" id="request-url" name="url" placeholder="Company URL">
-              <input class="col-xs-3" type="submit" value="Submit">
+              <input class="col-xs-3" type="submit" value="Send">
             </div>
           </form>
         </div>
@@ -50,12 +49,41 @@
           </div>
           <div id="apply-btn" class="col-xs-12 col-sm-4">
             <button>
-              <a href="#">
-                Apply
-              </a>
+              <a href="#">Apply</a>
             </button>
           </div>
         </div>
+      </section>
+
+      <section id="meet-mentors">
+        <form id="mentor-form" action="#.php">
+          <div class="row">
+            <h1 class="col-xs-12">Meet with a Mentor!</h1>
+            <p class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <input class="col-xs-8 col-xs-offset-2 col-sm-3" type="text" id="request-name" name="name" placeholder="Your Name">
+            <input class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0" type="text" id="request-email" name="email" placeholder="Your Email">
+            <input class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-0" type="submit" value="Send">
+          </div>
+        </form>
+         <div id="mentor-profiles"> <!-- ADD SCRIPT TO SHOW ALL MENTORS -->
+          <div class="single-mentor">
+            <div class="mentor-avatar"></div>
+            <p class="mentor-name">Firstname Lastname</p>
+            <p class="mentor-bio" style="height:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ...</p>
+          </div>
+          <div class="single-mentor">
+            <div class="mentor-avatar"></div>
+            <p class="mentor-name">Firstname Lastname</p>
+            <p class="mentor-bio" style="height:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ...</p>
+          </div>
+          <div class="single-mentor"></div>
+          <div class="single-mentor"></div>
+          <div class="single-mentor"></div>
+          <div class="single-mentor"></div>
+          <div class="single-mentor"></div>
+          <div class="single-mentor"></div>
+        </div>
+        <button id="show-mentors">Show more mentors</button>
       </section>
 
       <section id="request">
@@ -65,12 +93,13 @@
         </div>
         <div id="request-right">
           <form action="#.php">
-            <input type="text" id="request-name" name="name" placeholder="NAME">
-            <input type="text" id="request-email" name="email" placeholder="EMAIL">
-            <input type="submit" value="Submit">
+            <input type="text" id="request-name" name="name" placeholder="Name">
+            <input type="text" id="request-email" name="email" placeholder="Email">
+            <input type="submit" value="Send">
           </form>
         </div>
       </section>
+
     </main>
 
     <footer>

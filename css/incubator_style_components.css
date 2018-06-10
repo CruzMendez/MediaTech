@@ -1,3 +1,22 @@
+
+/* ---------BLANKET STYLING--------- */
+.hide{
+  display: hidden;
+}
+
+body{
+    font-family: century gothic, Helvetica;
+    width: auto;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+.row{
+  margin: 0;
+}
+
 /* -------------INCUBATOR PAGE - lANDING-------------- */
 #incu-landing{
   background-color: lightgray;
@@ -52,7 +71,7 @@
 }
 
 #incu-landing-form input[type=text], select {
-  font-size: 20px;
+  font-size: 25px;
   margin: 30px 0;
   display: inline-block;
   border: 0 solid black;
@@ -106,13 +125,14 @@
 #incu-about{
   width: 100%;
   background-color: #f2f2f2;
-  padding: 40px;
-  padding-bottom: 60px;
 }
 
 .incu-text-container{
-  padding: 40px;
-  padding-bottom: 0px;
+  height: 450px;
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #incu-about h1{
@@ -130,11 +150,12 @@
 }
 
 #apply-btn{
-  height: inherit;
+  height: 450px;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 60px;
+  align-items: center;
 }
 
 #apply-btn button{
@@ -165,9 +186,28 @@
   color: gray;
 }
 
+@media screen and (max-width: 767px) {
+  .incu-text-container{
+    height: auto;
+    padding: 60px;
+    padding-bottom: 0;
+  }
+  #apply-btn button{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+  }
+  #apply-btn button:hover{
+    font-size: 23px;
+  }
+  #apply-btn{
+    height: 200px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .incu-text-container{
-    padding: 40px;
+    text-align: center;
   }
   #incu-about p{
     font-size: 15px;
@@ -181,15 +221,123 @@
   #apply-btn{
     padding-top: 0px;
   }
-  #apply-btn button{
-    width: 100px;
-    height: 100px;
-    font-size: 20px;
-  }
   #apply-btn button:hover{
     font-size: 23px;
     transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
     -moz-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
     -webkit-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
   }
+}
+
+/* -------------INCUBATOR PAGE - MEET MENTORS------------- */
+
+#meet-mentors{
+/* width: 95%; */
+}
+
+#mentor-form h1{
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  padding: 20px;
+  padding-top: 40px;
+  /* margin-bottom: 10px; */
+}
+
+#mentor-form p{
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding: 0 30px;
+}
+
+#mentor-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 18px;
+  color: gray;
+}
+
+#mentor-form input[type=text], select {
+  font-size: 20px;
+  border: 0 solid black;
+  background-color: inherit;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+#mentor-form input[type=submit] {
+  color: black;
+  font-size: 22px;
+  background-color: inherit;
+  padding: 14px 0;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 8px;
+  border: 1px solid lightgray;
+}
+
+#mentor-form input[type=submit]:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+/* --MENTOR PROFILE CARDS--  */
+
+#mentor-profiles{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  height: 800px;
+  overflow: hidden;
+}
+
+.single-mentor{
+  border: 1px solid lightgray;
+  width: 250px;
+  height: 350px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mentor-avatar{
+  width: 195px;
+  height: 195px;
+  border-radius: 100%;
+  background-color: lightgray;
+  border: 2px solid gray;
+}
+
+.mentor-name{
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.mentor-bio{
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#show-mentors{
+  color: gray;
+  font-family: Helvetica;
+  font-size: 20px;
+  margin: 30px auto;
+  display: block;
+  border: none;
+  background-color: inherit;
+}
+
+#show-mentors:hover{
+  font-weight: bold;
 }
