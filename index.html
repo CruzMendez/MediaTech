@@ -11,10 +11,21 @@
   </head>
   <body>
 
-    <nav class="hide"> <!-- <<<-REMOVE CLASS ON SCROLL  --->
+    <nav class=""> <!-- <<<-REMOVE CLASS ON SCROLL  --->
       <a href="#"><img id="logo-icon" src="http://bigtime.ch/6064-cart_default/stanzschablone-sheer-circle-wreath-memory-box.jpg" /></a>
-      <a class="nav-anchor">Reach Us</a>
-      <a class="nav-anchor">Apply</a>
+      <a class="nav-anchor" href="#request">Reach Us</a>
+      <a class="nav-anchor">Register</a>
+      <a class="nav-anchor" href="./incubator.html">Apply</a>
+      <div class="dropdown">
+        <button class="dropbtn">=
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Apply</a>
+          <a href="#">Register</a>
+          <a href="#">Reach Us</a>
+        </div>
+      </div>
     </nav>
 
     <main>
@@ -32,10 +43,9 @@
         </div>
       </section>
 
-      <section id="choose-path" class="container.fluid">
-        <div class="row">
-          <a  id="start-link" href="#">
-            <div id="start" class="col-xs-6">
+      <section id="choose-path">
+          <a  id="start-link" href="./incubator.html">
+            <div id="start">
               <h1>Start</h1>
               <img src="#"/>
               <h2>Incubator</h2>
@@ -43,14 +53,13 @@
             </div>
           </a>
           <a  id="learn-link" href="#">
-            <div id="learn" class="col-xs-6">
+            <div id="learn">
               <h1>Learn</h1>
               <img src="#"/>
               <h2>Educator</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
           </a>
-        </div>
       </section>
 
       <section id="main-about">
@@ -62,34 +71,36 @@
 
       <section id="categories">
         <div class="categories-contain">
-          <div class="media-types animated fadeInUp">TECH</div>
-          <div class="media-types animated fadeInUp">VIDEO</div>
-          <div class="media-types animated fadeInUp">GAMES</div>
-          <div class="media-types animated fadeInUp">MEDIA</div>
-          <div class="media-types animated fadeInDown">MUSIC</div>
-          <div class="media-types animated fadeInDown">PODCAST</div>
-          <div class="media-types animated fadeInDown">CONTENT</div>
+          <div class="media-types animated zoomIn">TECH</div>   <!-- -----add script for animation on visible---- -->
+          <div class="media-types animated zoomIn">VIDEO</div>
+          <div class="media-types animated zoomIn">GAMES</div>
+          <div class="media-types animated zoomIn">MEDIA</div>
+          <div class="media-types animated zoomIn">MUSIC</div>
+          <div class="media-types animated zoomIn">PODCAST</div>
+          <div class="media-types animated zoomIn">CONTENT</div>
         </div>
       </section>
 
-    <section id="staff">    <!-- -----NEED TO FIX WRAPPING ISSUE HERE---- -->
-        <div id="mentors">
-          <h1>Mentors</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          <div class="mentor-pic-container">
-            <div class="prof-pic prof-pic-mid-left"></div>
-            <div class="prof-pic prof-pic-front"></div>
-            <div class="prof-pic prof-pic-mid"></div>
-            <div class="prof-pic prof-pic-back"></div>
+      <section id="staff" class="container.fluid">
+        <div class="row staff-row">
+          <div id="mentors" class="col-xs-12 col-md-6">
+            <h1>Mentors</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <div class="mentor-pic-container">
+              <div class="prof-pic ment-pic-mid-left"></div>
+              <div class="prof-pic ment-pic-front"></div>
+              <div class="prof-pic ment-pic-mid"></div>
+              <div class="prof-pic ment-pic-back"></div>
+            </div>
           </div>
-        </div>
-        <div id="instructors">
-          <h1>Instructors</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          <div class="instructor-pic-container">
-            <div class="prof-pic prof-pic-front"></div>
-            <div class="prof-pic prof-pic-mid"></div>
-            <div class="prof-pic prof-pic-back"></div>
+          <div id="instructors" class="col-xs-12 col-md-6">
+            <h1>Instructors</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <div class="instructor-pic-container">
+              <div class="prof-pic inst-pic-front"></div>
+              <div class="prof-pic inst-pic-mid"></div>
+              <div class="prof-pic inst-pic-back"></div>
+            </div>
           </div>
         </div>
       </section>

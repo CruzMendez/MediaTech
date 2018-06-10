@@ -1,0 +1,195 @@
+/* -------------INCUBATOR PAGE - lANDING-------------- */
+#incu-landing{
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+
+#incu-greeting h1{
+  text-align: center;
+  color: gray;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#incu-greeting p{
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+  padding: 30px 60px;
+}
+
+#incu-greeting p:nth-child(2){
+  font-size: 35px;
+  font-family: Helvetica;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+#incu-greeting span{
+  font-style: italic;
+}
+
+#incu-landing-form{
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+#incu-landing-form form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#incu-landing-form div{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#incu-landing-form input[type=text], select {
+  font-size: 20px;
+  margin: 30px 0;
+  display: inline-block;
+  border: 0 solid black;
+  box-sizing: border-box;
+  background-color: inherit;
+  border-bottom: 1px solid white;
+}
+
+#incu-landing-form p{
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: gray;
+}
+
+#incu-landing-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 18px;
+  color: gray;
+}
+
+#incu-landing-form input[type=submit] {
+  width: 140px;
+  color: white;
+  font-size: 20px;
+  background-color: inherit;
+  padding: 10px 30px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 25px;
+  border: 1px solid white;
+}
+
+#incu-landing-form input[type=submit]:hover {
+  background-color: white;
+  color: lightgray;
+}
+
+@media screen and (max-width: 500px){
+  #incu-landing-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-align: center;
+  }
+  #incu-landing-form input[type=submit] {
+    margin: 0 0 20px 0;
+  }
+  #incu-landing-form p{
+    margin-top: 1px;
+  }
+}
+
+/* -------------INCUBATOR PAGE - ABOUT-------------- */
+#incu-about{
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 40px;
+  padding-bottom: 60px;
+}
+
+.incu-text-container{
+  padding: 40px;
+  padding-bottom: 0px;
+}
+
+#incu-about h1{
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 5px solid lightgray;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+#incu-about p{
+  font-size: 18px;
+  line-height: 35px;
+}
+
+#apply-btn{
+  height: inherit;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+#apply-btn button{
+  width: 150px;
+  height: 150px;
+  background-color: lightgray;
+  border: 2px solid white;
+  font-size: 30px;
+  border-radius: 15px;
+  transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+  -moz-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+  -webkit-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+}
+
+#apply-btn button:hover{
+  background-color: white;
+  box-shadow: 20px 20px 20px gray;
+  border: 2px solid lightgray;
+  font-size: 33px;
+  text-shadow: 12px 12px 12px gray;
+  font-weight: bold;
+  transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+  -moz-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+  -webkit-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+}
+
+#apply-btn a{
+  color: gray;
+}
+
+@media screen and (max-width: 500px) {
+  .incu-text-container{
+    padding: 40px;
+  }
+  #incu-about p{
+    font-size: 15px;
+    line-height: 30px;
+  }
+  #incu-about h1{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+  }
+  #apply-btn{
+    padding-top: 0px;
+  }
+  #apply-btn button{
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+  }
+  #apply-btn button:hover{
+    font-size: 23px;
+    transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+    -moz-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+    -webkit-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
+  }
+}

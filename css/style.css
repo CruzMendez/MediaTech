@@ -4,7 +4,8 @@
 }
 
 body{
-    font-family: century gothic;
+    font-family: century gothic, Helvetica;
+    width: auto;
 }
 
 a, a:hover{
@@ -19,18 +20,21 @@ nav{
   top: 0;
   height: 60px;
   background-color: lightgray;
-  opacity: .8;
-  line-height: 55px;
+  opacity: .9;
+  line-height: 10px;
+  text-align: center;
 }
 
 #logo-icon{
-  margin: 7.5px 20px;
+  margin: 7px 20px;
+  float: left;
 }
 
 .nav-anchor{
+  margin-top: 23px;
   margin-right: 40px;
   font-family: century gothic;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   float: right;
@@ -38,7 +42,60 @@ nav{
 
 nav a:hover{
   font-weight: bolder;
+  color: gray;
+}
+
+nav a span{
+  font-size: 10px;
+}
+
+.dropdown {
+  visibility: hidden;
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  position: absolute;
+  float: right;
+}
+
+.dropdown-content{
+  background-color: lightgray;
+  float: right;
+}
+
+.dropdown-content a {
+  float: none;
   color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 500px){
+  .nav-anchor{
+    visibility: hidden;
+  }
+  .dropdown{
+    visibility: visible;
+  }
 }
 
 /* -------MAIN page - LANDING -------*/
@@ -49,6 +106,7 @@ nav a:hover{
   background-size: cover;
   width: 100%;
   height: 900px;
+  padding-top: 20px;
 }
 
 #large-logo{
@@ -79,7 +137,7 @@ nav a:hover{
 #greeting{
   color: white;
   float: right;
-  margin-top: 50px;
+  margin-top: 200px;
   margin-right: 10%;
 }
 
@@ -95,32 +153,54 @@ nav a:hover{
   font-size: 20px;
 }
 
+@media screen and (max-width: 500px) {
+  #large-logo{
+    margin: 0 auto;
+  }
+  #greeting{
+    text-align: center;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 150px;
+  }
+  #greeting h1{
+    font-size: 35px;
+  }
+}
+
 /*------- MAIN PAGE - START PATH------ */
+#choose-path{
+  display: flex;
+  flex-direction: row;
+}
+
 #start, #learn{
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: background-color .75s ease-in-out;
-  -moz-transition: background-color .75s ease-in-out;
-  -webkit-transition: background-color .75s ease-in-out;
+  transition: background-color .5s, box-shadow .5s;
+  -moz-transition: background-color .5s, box-shadow .5s;
+  -webkit-transition: background-color .5s, box-shadow .5s;
 }
 
 #start:hover, #learn:hover{
   background-color: #f2f2f2;
-  transition: background-color .25s ease-in-out;
-  -moz-transition: background-color .25s ease-in-out;
-  -webkit-transition: background-color .25s ease-in-out;
+  box-shadow: 25px 25px 25px lightgray;
+  transition: background-color .5s, box-shadow .5s;
+  -moz-transition: background-color .5s, box-shadow .5s;
+  -webkit-transition: background-color .5s, box-shadow .5s;
 }
 
-#start:hover, #learn:hover{
-  box-shadow: 25px 25px 25px lightgray;
-  transition: box-shadow .75s ease-in-out;
-  -moz-transition: box-shadow .75s ease-in-out;
-  -webkit-transition: box-shadow .75s ease-in-out;
+#learn:hover{
+  box-shadow: -25px 25px 25px lightgray;
+}
+
+#start a, #learn a {
+  width: 50%;
 }
 
 #start h1, #learn h1{
-  font-weight: light;
+  font-weight: 100;
   font-size: 40px;
   color: gray;
   letter-spacing: 8px;
@@ -135,33 +215,48 @@ nav a:hover{
 
 #start h2{
   color: black;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
-  margin: 60px 0 40px 0;
+  margin: 60px 0 20px 0;
   padding-left: 40px;
   width: 100%;
 }
 
 #learn h2{
   color: black;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: bold;
-  margin: 60px 0 40px 0;
+  margin: 60px 0 20px 0;
   padding-right: 40px;
-  width: 100%;
   text-align: right;
+  width: 100%;
 }
 
 #start p, #learn p{
+  width: 90%;
   color: black;
-  padding: 0 40px 0 40px;
-  font-size: 15px;
-  line-height: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  line-height: 30px;
   margin-bottom: 60px;
 }
 
-#learn p{
+#learn h2, #learn p{
   text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+  #start h1, #learn h1{
+    font-size: 30px;
+  }
+  #start h2, #learn h2{
+    font-size: 25px;
+    padding: 10px 15px;
+  }
+  #start p, #learn p{
+    padding: 10px;
+    font-size: 15px;
+  }
 }
 
 /* -------------MAIN PAGE - ABOUT-------------- */
@@ -185,13 +280,26 @@ nav a:hover{
   line-height: 35px;
 }
 
+@media screen and (max-width: 500px) {
+  #main-about{
+    padding: 50px;
+  }
+  #main-about p{
+    font-size: 15px;
+    line-height: 30px;
+  }
+  #main-about h1{
+    width: 150px;
+  }
+}
+
 /* ---------------MAIN PAGE - MEDIA CATEGORIES-------------- */
 #categories{
   width: 100%;
   height: auto;
-  padding: 70px;
+  padding: 50px;
   overflow: hidden;
-
+  margin: 50px 0;
 }
 
 .categories-contain{
@@ -214,25 +322,41 @@ nav a:hover{
   box-shadow: 25px 25px 25px lightgray;
 }
 
+@media screen and (max-width: 500px) {
+  .media-types{
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+  }
+  #categories{
+    padding: 5px;
+  }
+  .categories-contain{
+    padding: 5px;
+  }
+}
 /* ----------MAIN PAGE - STAFF PROFILE PICS--------- */
 #staff{
   height: auto;
-  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.staff-row{
+  width: 100%;
 }
 
 #mentors, #instructors{
-  width: 500px;
+  margin-bottom: 40px;
 }
 
 #mentors h1, #instructors h1{
   color: black;
   font-size: 35px;
   font-weight: bold;
-  padding-left: 10px;
+  padding-left: 40px;
 }
 
 #mentors p, #instructors p{
@@ -240,20 +364,8 @@ nav a:hover{
   line-height: 30px;
 }
 
-.mentor-pic-container{
-  margin-left: -200px;
-}
-
-.instructor-pic-container{
-  margin-left: -80px;
-}
-
 .mentor-pic-container, .instructor-pic-container{
-  width: 50%;
-  height: 200px;
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 60px;
+  height: 230px;
 }
 
 .prof-pic{
@@ -262,36 +374,119 @@ nav a:hover{
   height: 200px;
   border-radius: 100%;
   border: 3px solid white;
+  margin: 0 auto;
+  bottom: 20px;
 }
 
 .prof-pic:hover{
   z-index: 4;
+  border: 6px solid white;
+  box-shadow: 5px 8px 25px lightgray;
 }
 
-.prof-pic-front{
+.inst-pic-front{
   background-color: lightgray;
-  position: relative;
-  left: 100px;
+  position: absolute;
   z-index: 3;
+  left: 18%;
 }
 
-.prof-pic-mid{
+.inst-pic-mid{
   background-color: darkgray;
+  position: absolute;
   z-index: 2;
+  left: 33%;
 }
 
-.prof-pic-mid-left{
+.inst-pic-back{
+  background-color: gray;
+  position: absolute;
+  z-index: 1;
+  left: 48%;
+}
+
+.ment-pic-front{
+  background-color: lightgray;
+  position: absolute;
+  z-index: 3;
+  left: 23%;
+}
+
+.ment-pic-mid{
+  background-color: darkgray;
+  position: absolute;
+  z-index: 2;
+  left: 38%;
+}
+
+.ment-pic-mid-left{
   z-index: 2;
   background: darkgray;
-  position: relative;
-  left: 200px;
+  position: absolute;
+  left: 12%
 }
 
-.prof-pic-back{
+.ment-pic-back{
   background-color: gray;
-  position: relative;
-  left: -100px;
+  position: absolute;
   z-index: 1;
+  left: 53%;
+}
+
+@media screen and (max-width: 1200px) {
+  .mentor-pic-container, .instructor-pic-container{
+    height: 200px;
+  }
+  .prof-pic{
+    width: 170px;
+    height: 170px;
+  }
+  .inst-pic-front{
+    left: 22%
+  }
+  .inst-pic-mid{
+    left: 37%;
+  }
+  .inst-pic-back{
+    left: 52%
+  }
+  .ment-pic-front{
+    left: 30%
+  }
+  .ment-pic-mid{
+    left: 45%;
+  }
+  .ment-pic-mid-left{
+    left: 15%;
+  }
+  .ment-pic-back{
+    left: 60%
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mentor-pic-container, .instructor-pic-container{
+    height: 150px;
+  }
+  .prof-pic{
+    width: 120px;
+    height: 120px;
+  }
+  .prof-pic-front{
+
+  }
+  .prof-pic-mid{
+
+  }
+  .prof-pic-mid-left{
+
+  }
+  .prof-pic-back{
+
+  }
+  .mentor-pic-container{
+
+  }
 }
 
 /* --------MAIN PAGE - REQUEST INFO---------- */
@@ -321,8 +516,15 @@ nav a:hover{
 }
 
 #request p{
+  color: gray;
   margin-top: 30px;
   line-height: 40px;
+}
+
+#request-right form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #request input[type=text], select {
@@ -343,11 +545,11 @@ nav a:hover{
 
 #request input[type=submit] {
     color: white;
-    width: 70%;
+    width: 50%;
     font-size: 25px;
     background-color: inherit;
     padding: 14px 20px;
-    margin: 30px 50px;
+    margin: 25px 0;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -359,7 +561,14 @@ nav a:hover{
     color: lightgray;
 }
 
-/* ---------MAIN-PAGE - FOOTER-------- */
+@media screen and (max-width:500px) {
+  #request h1{
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+/* ---------ALL PAGES- FOOTER-------- */
 #contact{
   background-image: url("https://million-wallpapers.com/wallpapers/3/1/481902161871724.jpg");
   color: white;
@@ -396,14 +605,13 @@ nav a:hover{
 #contact h2{
   font-size: 20px;
   color: white;
-  padding: 20px 0px 10px 20px;
+  padding: 20px 0px;
   line-height: 45px;
 }
 
 #contact span{
   font-size: 20px;
   color: salmon;
-  padding: 0 5px 0 20px;
 }
 
 #contact p{
