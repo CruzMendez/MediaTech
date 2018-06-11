@@ -1,0 +1,81 @@
+
+/* ---------BLANKET STYLING--------- */
+.hide{
+  display: hidden;
+}
+
+body{
+    font-family: Helvetica, century gothic;
+    width: auto;
+}
+
+a, a:hover{
+  text-decoration: none;
+}
+
+.row{
+  margin: 0;
+}
+
+/* -------------REG PAGE- lANDING-------------- */
+#reg-landing{
+  background-image: url("https://mediatech.ventures/wp-content/uploads/2016/12/landing-promo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+}
+
+#reg-landing h1{
+  padding-top: 300px;
+  margin-left: 30px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* -------------REG PAGE- SCHEDULE-------------- */
+#schedule{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#schedule h1{
+  line-height: 45px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.divider{
+  border: 1.5px solid gray;
+  height: 2px;
+  width: 200px;
+  margin-top: 30px;
+}
+
+#schedule h2{
+  line-height: 35px;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+#schedule h2 span{
+  color: black;
+  font-weight: bold;
+}
+
+#selected-courses{
+  /* width: auto; */
+}
+
+.user-course{
+  width: 600px;
+  height: 200px;
+  border: 2px dashed gray;
+  margin: 20px 30px;
+}

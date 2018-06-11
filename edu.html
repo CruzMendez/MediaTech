@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/incubator_style.css">
+    <link rel="stylesheet" href="./css/edu_style.css">
     <link rel="stylesheet" href="./css/animate.css">
-    <title>Incubator</title>
+    <title>Coursework</title>
   </head>
   <body>
 
@@ -16,13 +16,13 @@
       <a href="./index.html"><img id="logo-icon" src="https://mediatech.ventures/wp-content/themes/mtv/img/mtv-logo2-min.png")></a>
       <a class="nav-anchor" href="#request">Reach Us</a>
       <a class="nav-anchor" href="./reg.html">Register</a>
-      <a class="nav-anchor" href="./apply.html">Apply</a>
+      <a class="nav-anchor" href="./incubator.html">Apply</a>
       <div class="dropdown">
         <button class="dropbtn">=
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="./apply.html">Apply</a>
+          <a href="./incubator.html">Apply</a>
           <a href="./reg.html">Register</a>
           <a href="#request">Reach Us</a>
         </div>
@@ -31,72 +31,99 @@
 
     <main>
 
-      <section id="incu-landing">
-        <div id="incu-greeting">
+      <section id="edu-landing">
+        <div id="edu-greeting">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-          <p>Get Started<span>!</span></p>
+          <p>Let us help you get started<span>!</span></p>
         </div>
-        <div id="incu-landing-form" class="container.fluid">
+        <div id="edu-landing-form" class="container.fluid">
           <form action="#.php" class="row">
             <div class="col-xs-10 col-md-6">
               <input class="col-xs-8" style="" type="text" id="request-email" name="email" placeholder="Email">
-              <input class="col-xs-3" type="submit" value="Submit">
-            </div>
-              <p>OR</p>
-            <div class="col-xs-10 col-md-6">
-              <input class="col-xs-8" type="text" id="request-url" name="url" placeholder="Company URL">
               <input class="col-xs-3" type="submit" value="Send">
             </div>
           </form>
         </div>
       </section>
 
+      <section id="courses">
+        <h1>Courses + Locations</h1>
+        <div id="course-filter">
+          <p >Filter courses by:</p>
+          <div id="filter-placeholder"></div>
+        </div>
+         <div id="course-profiles"> <!-- ADD SCRIPT TO SHOW ALL MENTORS -->
+          <div class="single-course">
+            <div class="course-avatar">
+              <button class="add-course">(+ add)</button>
+              <p class="course-city">City</p>
+            </div>
+            <p class="course-name">Course</p>
+            <p class="course-bio" style="height:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ...</p>
+          </div>
+          <div class="single-course">
+            <div class="course-avatar">
+              <button class="add-course">(+ add)</button>
+              <p class="course-city">City</p>
+            </div>
+            <p class="course-name">Course</p>
+            <p class="course-bio" style="height:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ...</p>
+          </div>
+          <div class="single-course"></div>
+          <div class="single-course"></div>
+          <div class="single-course"></div>
+          <div class="single-course"></div>
+          <div class="single-course"></div>
+          <div class="single-course"></div>
+        </div>
+        <button id="show-instructors">Show all courses</button>
+      </section>
 
-      <section id="incu-about" class="container">
+      <section id="edu-about" class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-8 incu-text-container">
-            <h1>About the Incubator</h1>
+          <div class="col-xs-12 col-sm-8 edu-text-container">
+            <h1>About the coursework</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div id="apply-btn" class="col-xs-12 col-sm-4">
+          <div id="reg-btn" class="col-xs-12 col-sm-4">
             <button>
-              <a href="#">Apply</a>
+              <a href="./reg.html">Register</a>
             </button>
           </div>
         </div>
       </section>
 
-      <section id="meet-mentors">
-        <form id="mentor-form" action="#.php">
+      <section id="meet-instructors">
+        <form id="instructor-form" action="#.php">
           <div class="row">
-            <h1 class="col-xs-12">Meet with a Mentor!</h1>
+            <h1 class="col-xs-12">Meet with an Instructor!</h1>
             <p class="col-xs-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             <input class="col-xs-8 col-xs-offset-2 col-sm-3" type="text" id="request-name" name="name" placeholder="Your Name">
             <input class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0" type="text" id="request-email" name="email" placeholder="Your Email">
             <input class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-0" type="submit" value="Send">
           </div>
         </form>
-         <div id="mentor-profiles"> <!-- ADD SCRIPT TO SHOW ALL MENTORS -->
-          <div class="single-mentor">
-            <div class="mentor-avatar"></div>
-            <p class="mentor-name">Firstname Lastname</p>
-            <p class="mentor-bio" style="height:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ...</p>
+         <div id="instructor-profiles"> <!-- ADD SCRIPT TO SHOW ALL MENTORS -->
+          <div class="single-instructor">
+            <div class="instructor-avatar"></div>
+            <p class="instructor-name">Firstname Lastname</p>
+            <p class="instructor-bio" style="height:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ...</p>
           </div>
-          <div class="single-mentor">
-            <div class="mentor-avatar"></div>
-            <p class="mentor-name">Firstname Lastname</p>
-            <p class="mentor-bio" style="height:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ...</p>
+          <div class="single-instructor">
+            <div class="instructor-avatar"></div>
+            <p class="instructor-name">Firstname Lastname</p>
+            <p class="instructor-bio" style="height:50px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ...</p>
           </div>
-          <div class="single-mentor"></div>
-          <div class="single-mentor"></div>
-          <div class="single-mentor"></div>
-          <div class="single-mentor"></div>
-          <div class="single-mentor"></div>
-          <div class="single-mentor"></div>
+          <div class="single-instructor"></div>
+          <div class="single-instructor"></div>
+          <div class="single-instructor"></div>
+          <div class="single-instructor"></div>
+          <div class="single-instructor"></div>
+          <div class="single-instructor"></div>
         </div>
-        <button id="show-mentors">Show more mentors</button>
+        <button id="show-instructors">Show more instructors</button>
       </section>
 
       <section id="request">

@@ -17,9 +17,11 @@ a, a:hover{
   margin: 0;
 }
 
-/* -------------INCUBATOR PAGE - lANDING-------------- */
-#incu-landing{
-  background-color: lightgray;
+/* -------------EDU PAGE- lANDING-------------- */
+#edu-landing{
+  background-image: url("https://mediatech.ventures/wp-content/uploads/2016/12/landing-bg.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,50 +29,45 @@ a, a:hover{
   padding-top: 60px;
 }
 
-#incu-greeting h1{
-  text-align: center;
-  color: gray;
-  font-size: 35px;
-  font-weight: bold;
-}
 
-#incu-greeting p{
+#edu-greeting p{
   text-align: center;
   color: white;
   font-size: 20px;
   line-height: 40px;
-  padding: 30px 60px;
+  padding: 30px 80px;
 }
 
-#incu-greeting p:nth-child(2){
+#edu-greeting p:nth-child(2){
   font-size: 35px;
   font-family: Helvetica;
   margin-top: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+  text-shadow: 8px 8px 8px black;
 }
 
-#incu-greeting span{
+#edu-greeting span{
   font-style: italic;
 }
 
-#incu-landing-form{
+#edu-landing-form{
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 
-#incu-landing-form form{
+#edu-landing-form form{
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-#incu-landing-form div{
+#edu-landing-form div{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-#incu-landing-form input[type=text], select {
+#edu-landing-form input[type=text], select {
   font-size: 25px;
   margin: 30px 0;
   display: inline-block;
@@ -80,19 +77,19 @@ a, a:hover{
   border-bottom: 1px solid white;
 }
 
-#incu-landing-form p{
+#edu-landing-form p{
   padding: 20px;
   font-size: 20px;
   font-weight: bold;
   color: gray;
 }
 
-#incu-landing-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+#edu-landing-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 18px;
-  color: gray;
+  color: white;
 }
 
-#incu-landing-form input[type=submit] {
+#edu-landing-form input[type=submit] {
   width: 140px;
   color: white;
   font-size: 20px;
@@ -102,32 +99,166 @@ a, a:hover{
   border: none;
   border-radius: 25px;
   border: 1px solid white;
+  box-shadow: 10px 10px 10px black;
 }
 
-#incu-landing-form input[type=submit]:hover {
+#edu-landing-form input[type=submit]:hover {
   background-color: white;
   color: lightgray;
 }
 
 @media screen and (max-width: 500px){
-  #incu-landing-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  #edu-landing-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     text-align: center;
   }
-  #incu-landing-form input[type=submit] {
+  #edu-landing-form input[type=submit] {
     margin: 0 0 20px 0;
   }
-  #incu-landing-form p{
+  #edu-landing-form p{
     margin-top: 1px;
   }
 }
 
-/* -------------INCUBATOR PAGE - ABOUT-------------- */
-#incu-about{
+/* ---------------EDU PAGE - COURSES--------------- */
+#courses h1{
+  width: 100%;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 35px;
+  margin: 80px auto;
+  line-height: 60px;
+  letter-spacing: 3px;
+}
+
+#course-filter{
+  font-family: Helvetica;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+#course-filter p{
+  font-size: 22px;
+  line-height: 35px;
+  margin: 0 20px;
+}
+
+#filter-placeholder{
+  width: 250px;
+  height: 40px;
+  border: 1px solid lightgray;
+  border-radius: 6px;
+}
+
+/* --COURSE PROFILE INDIVIDUAL CARDS--  */
+
+#course-profiles{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-top: 40px;
+  height: 800px;
+  overflow: hidden;
+}
+
+.single-course{
+  border: 1px solid lightgray;
+  width: 250px;
+  height: 350px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px gray;
+}
+
+.course-avatar{
+  width: 100%;
+  height: 195px;
+  background-color: lightgray;
+  border-bottom: 2px solid gray;
+}
+
+.add-course{
+  font-family: Helvetica;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  float: right;
+  right: 5px;
+  color: white;
+  background-color: inherit;
+  font-weight: bold;
+  border: none;
+  border-radius: 100%;
+  padding: 0;
+}
+
+.add-course:hover{
+  background-color: white;
+  color: gray;
+  opacity: .7;
+}
+
+.course-city{
+  font-size: 18px;
+  font-family: Helvetica;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  color: white;
+  border: 2px solid gray;
+  background-color: inherit;
+  border-radius: 100%;
+  padding: 0;
+  top: 130px;
+  left: 8px;
+  text-align: center;
+  line-height: 80px;
+}
+
+.course-name{
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.course-bio{
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#show-courses{
+  color: gray;
+  font-family: Helvetica;
+  font-size: 20px;
+  margin: 30px auto;
+  display: block;
+  border: none;
+  background-color: inherit;
+}
+
+#show-courses:hover{
+  font-weight: bold;
+}
+
+/* -------------EDU PAGE - ABOUT-------------- */
+#edu-about{
   width: 100%;
   background-color: #f2f2f2;
 }
 
-.incu-text-container{
+.edu-text-container{
   height: 450px;
   padding-left: 80px;
   display: flex;
@@ -135,7 +266,7 @@ a, a:hover{
   justify-content: center;
 }
 
-#incu-about h1{
+#edu-about h1{
   font-size: 30px;
   font-weight: bold;
   border-bottom: 5px solid lightgray;
@@ -144,12 +275,12 @@ a, a:hover{
   line-height: 35px;
 }
 
-#incu-about p{
+#edu-about p{
   font-size: 18px;
   line-height: 35px;
 }
 
-#apply-btn{
+#reg-btn{
   height: 450px;
   text-align: center;
   display: flex;
@@ -158,11 +289,11 @@ a, a:hover{
   align-items: center;
 }
 
-#apply-btn button{
+#reg-btn button{
   width: 150px;
   height: 150px;
   background-color: lightgray;
-  border: 2px solid white;
+  border: 1px solid white;
   font-size: 30px;
   border-radius: 15px;
   transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
@@ -170,7 +301,7 @@ a, a:hover{
   -webkit-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
 }
 
-#apply-btn button:hover{
+#reg-btn button:hover{
   background-color: white;
   box-shadow: 20px 20px 20px gray;
   border: 2px solid lightgray;
@@ -182,46 +313,46 @@ a, a:hover{
   -webkit-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
 }
 
-#apply-btn a{
+#reg-btn a{
   color: gray;
 }
 
 @media screen and (max-width: 767px) {
-  .incu-text-container{
+  .edu-text-container{
     height: auto;
     padding: 60px;
     padding-bottom: 0;
   }
-  #apply-btn button{
+  #reg-btn button{
     width: 100px;
     height: 100px;
     font-size: 20px;
   }
-  #apply-btn button:hover{
+  #reg-btn button:hover{
     font-size: 23px;
   }
-  #apply-btn{
+  #reg-btn{
     height: 200px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .incu-text-container{
+  .edu-text-container{
     text-align: center;
   }
-  #incu-about p{
+  #edu-about p{
     font-size: 15px;
     line-height: 30px;
   }
-  #incu-about h1{
+  #edu-about h1{
     width: 100%;
     font-size: 30px;
     text-align: center;
   }
-  #apply-btn{
+  #reg-btn{
     padding-top: 0px;
   }
-  #apply-btn button:hover{
+  #reg-btn button:hover{
     font-size: 23px;
     transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
     -moz-transition: font-weight .5s, text-shadow .5s, font-size .5s, background-color .5s, box-shadow .5s;
@@ -229,13 +360,8 @@ a, a:hover{
   }
 }
 
-/* -------------INCUBATOR PAGE - MEET MENTORS------------- */
-
-#meet-mentors{
-/* width: 95%; */
-}
-
-#mentor-form h1{
+/* -------------EDU PAGE - MEET INSTRUCTORS------------- */
+#instructor-form h1{
   font-family: Helvetica;
   font-weight: bold;
   font-size: 30px;
@@ -243,10 +369,9 @@ a, a:hover{
   line-height: 40px;
   padding: 20px;
   padding-top: 40px;
-  /* margin-bottom: 10px; */
 }
 
-#mentor-form p{
+#instructor-form p{
   font-size: 16px;
   text-align: center;
   line-height: 30px;
@@ -254,12 +379,12 @@ a, a:hover{
   padding: 0 30px;
 }
 
-#mentor-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+#instructor-form ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 18px;
   color: gray;
 }
 
-#mentor-form input[type=text], select {
+#instructor-form input[type=text], select {
   font-size: 20px;
   border: 0 solid black;
   background-color: inherit;
@@ -268,7 +393,7 @@ a, a:hover{
   margin-right: 25px;
 }
 
-#mentor-form input[type=submit] {
+#instructor-form input[type=submit] {
   color: black;
   font-size: 22px;
   background-color: inherit;
@@ -277,16 +402,17 @@ a, a:hover{
   border: none;
   border-radius: 8px;
   border: 1px solid lightgray;
+  box-shadow: 6px 6px 6px gray;
 }
 
-#mentor-form input[type=submit]:hover {
+#instructor-form input[type=submit]:hover {
   background-color: lightgray;
   color: black;
 }
 
-/* --MENTOR PROFILE CARDS--  */
+/* --INSCTRUCTOR PROFILE CARDS--  */
 
-#mentor-profiles{
+#instructor-profiles{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -296,7 +422,7 @@ a, a:hover{
   overflow: hidden;
 }
 
-.single-mentor{
+.single-instructor{
   border: 1px solid lightgray;
   width: 250px;
   height: 350px;
@@ -307,28 +433,29 @@ a, a:hover{
   overflow: hidden;
 }
 
-.mentor-avatar{
+.instructor-avatar{
   width: 195px;
   height: 195px;
   border-radius: 100%;
   background-color: lightgray;
   border: 2px solid gray;
+  box-shadow: 3px 3px 3px gray;
 }
 
-.mentor-name{
+.instructor-name{
   font-family: Helvetica;
   font-size: 20px;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
-.mentor-bio{
+.instructor-bio{
   line-height: 25px;
   text-align: center;
   font-size: 14px;
 }
 
-#show-mentors{
+#show-instructors{
   color: gray;
   font-family: Helvetica;
   font-size: 20px;
@@ -338,6 +465,6 @@ a, a:hover{
   background-color: inherit;
 }
 
-#show-mentors:hover{
+#show-instructors:hover{
   font-weight: bold;
 }
