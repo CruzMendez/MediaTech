@@ -24,10 +24,12 @@ a, a:hover{
   background-size: cover;
   background-position: bottom;
   height: 400px;
+  overflow: hidden;
 }
 
 #reg-landing h1{
-  padding-top: 300px;
+  width: auto;
+  padding-top: 150px;
   margin-left: 30px;
   font-size: 35px;
   font-weight: bold;
@@ -61,7 +63,7 @@ a, a:hover{
   padding-top: 40px;
   font-size: 20px;
   color: gray;
-  margin-bottom: 40px;
+  margin-bottom: 400px; /*TEMPORARY - DELETE THIS MARGIN BEFORE LAUNCH*/
 }
 
 #schedule h2 span{
@@ -73,9 +75,8 @@ a, a:hover{
   /* width: auto; */
 }
 
-.user-course{
-  width: 600px;
-  height: 200px;
-  border: 2px dashed gray;
-  margin: 20px 30px;
+@media screen and (max-width:500px){
+  #schedule h1{
+    font-size: 25px;
+  }
 }

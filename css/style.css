@@ -12,17 +12,24 @@ a, a:hover{
   text-decoration: none;
 }
 
+.row{
+  margin: 0;
+}
+
 /* -------FIXED TOP NAV BAR ------*/
-nav{
-  z-index: 100;
-  width: 100%;
+#navbar {
   position: fixed;
   top: 0;
-  height: 75px;
-  background-color: lightgray;
-  opacity: .9;
-  line-height: 22px;
-  text-align: center;
+  margin: 0 auto;
+  background-color: #333;
+  width: 100%;
+  z-index: 10;
+  opacity: .5;
+  height: 80px;
+}
+
+#navbar:hover {
+  opacity: 1;
 }
 
 #logo-icon{
@@ -30,104 +37,110 @@ nav{
   float: left;
 }
 
-.nav-anchor{
-  margin-top: 23px;
-  margin-right: 40px;
-  font-family: century gothic;
-  font-size: 18px;
+.navbar-a {
+  line-height: 20px;
+  float: right;
+  font-size: 20px;
+  color: white;
+  text-align: center;
   font-weight: bold;
-  color: white;
-  float: right;
+  margin-top: 15px;
+  margin-right: 45px;
 }
 
-nav a:hover{
-  font-weight: bolder;
-  color: gray;
+#navbar a span{
+  font-size: 13px;
+  font-weight: normal;
 }
 
-nav a span{
-  font-size: 10px;
+#caret{
+  font-size: 45px;
 }
-
-.dropdown {
-  visibility: hidden;
-  float: right;
-  overflow: hidden;
-}
-
 .dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-  position: absolute;
-  float: right;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 16px 24px;
+    background-color: inherit;
 }
 
-.dropdown-content{
-  background-color: lightgray;
-  float: right;
+#navbar a:hover, .dropdown:hover .dropbtn {
+    color: red;
+}
+
+.dropdown{
+  position: absolute;
+  right: 25px;
+  top: 0px;
+  visibility: hidden;
+}
+
+.dropdown-content {
+    width: 170px;
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: #333;
+    box-shadow: 6px 6px 6px black;
+    z-index: 11;
 }
 
 .dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: white;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    text-align: right;
+    line-height: 20px;
+    float: right;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 500px){
-  .nav-anchor{
-    visibility: hidden;
-  }
   .dropdown{
     visibility: visible;
+  }
+  .navbar-a{
+    visibility: hidden;
   }
 }
 
 /* -------MAIN page - LANDING -------*/
 #landing{
-  background-color: lightgray; /*temporary style DELETE*/
-  background-image: linear-gradient( rgba(100, 100, 100, .2), rgba(100, 100, 100, .75) ), url("../img/deal.jpg");
+  background-image: linear-gradient( rgba(70, 70, 70, .2), rgba(70, 70, 70, .75) ), url("../img/deal.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 900px;
   padding-top: 20px;
 }
 
 #large-logo{
-  width: 365px;
-  height: 365px;
+  width: 300px;
+  height: 300px;
   border: 5px dashed white;
   border-radius: 100%;
 }
 
 #ring-med{
-  margin-left: 45px;
-  margin-top: 45px;
-  width: 265px;
-  height: 265px;
+  width: 250px;
+  height: 250px;
   border: 5px dashed white;
   border-radius: 100%;
 }
 
 #ring-sml{
-  margin-left: 45px;
-  margin-top: 45px;
+  margin-left: 36px;
+  margin-top: 36px;
   width: 165px;
   height: 165px;
   border: 5px dashed white;
@@ -138,7 +151,7 @@ nav a span{
   color: white;
   float: right;
   margin-top: 200px;
-  margin-right: 10%;
+  /* margin-right: 10%; */
 }
 
 #greeting h1{
@@ -154,9 +167,7 @@ nav a span{
 }
 
 @media screen and (max-width: 500px) {
-  #large-logo{
-    margin: 0 auto;
-  }
+
   #greeting{
     text-align: center;
     width: 100%;

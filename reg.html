@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reg_style.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MediaTech</title>
   </head>
   <body>
 
-    <nav class=""> <!-- <<<-REMOVE CLASS ON SCROLL  --->
-      <a href="./index.html"><img id="logo-icon" src="https://mediatech.ventures/wp-content/themes/mtv/img/mtv-logo2-min.png")></a>
-      <a class="nav-anchor" href="#request">Reach Us</a>
-      <a class="nav-anchor" href="./reg.html">Register</a>
-      <a class="nav-anchor" href="./incubator.html">Apply</a>
+    <section id="navbar" class="">
       <div class="dropdown">
-        <button class="dropbtn">=
-          <i class="fa fa-caret-down"></i>
+        <button class="dropbtn">
+          <i id="caret" class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="./incubator.html">Apply</a>
-          <a href="./reg.html">Register</a>
-          <a href="#request">Reach Us</a>
+          <a href="./index.html#request">Reach Us<span><br/>contact</span></a>
+          <a href="./edu.html#courses">Register<span><br />for courses</span></a>
+          <a href="./incubator.html#incu-about">Apply<span><br/>to incubator</span></a>
         </div>
       </div>
-    </nav>
+      <a id="logo-icon" href="./index.html"><img  src="https://mediatech.ventures/wp-content/themes/mtv/img/mtv-logo2-min.png")></a>
+      <a class="navbar-a" href="./index.html#request">Reach Us<span><br/>contact</span></a>
+      <a class="navbar-a" href="./edu.html#courses">Register<span><br />for courses</span></a>
+      <a class="navbar-a" href="./incubator.html#incu-about">Apply<span><br/>to incubator</span></a>
+    </section>
 
     <main>
 
@@ -48,19 +49,6 @@
         </div>
       </section>
 
-      <section id="request">
-        <div id="request-left">
-          <h1>Request more info</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
-        <div id="request-right">
-          <form action="#.php">
-            <input type="text" id="request-name" name="name" placeholder="Name">
-            <input type="text" id="request-email" name="email" placeholder="Email">
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-      </section>
     </main>
 
     <footer>

@@ -22,6 +22,7 @@ a, a:hover{
   background-image: url("https://mediatech.ventures/wp-content/uploads/2016/12/landing-bg.jpg");
   background-size:cover;
   background-repeat: no-repeat;
+  background-position: bottom;
   display: flex;
   flex-direction: column;
   align-items: center;

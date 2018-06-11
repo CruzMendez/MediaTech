@@ -7,36 +7,37 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MediaTech</title>
   </head>
   <body>
 
-    <nav class="hide"> <!-- <<<-REMOVE CLASS ON SCROLL  --->
-      <a href="./index.html"><img id="logo-icon" src="https://mediatech.ventures/wp-content/themes/mtv/img/mtv-logo2-min.png")></a>
-      <a class="nav-anchor" href="#request">Reach Us</a>
-      <a class="nav-anchor" href="./edu.html">Register</a>
-      <a class="nav-anchor" href="./incubator.html">Apply</a>
+    <section id="navbar" class="hide"> <!-- REMOVE CLASS ON SCROLL -->
       <div class="dropdown">
-        <button class="dropbtn">=
-          <i class="fa fa-caret-down"></i>
+        <button class="dropbtn">
+          <i id="caret" class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Apply</a>
-          <a href="#">Register</a>
-          <a href="#">Reach Us</a>
+          <a href="#request">Reach Us<span><br/>contact</span></a>
+          <a href="./edu.html#courses">Register<span><br />for courses</span></a>
+          <a href="./incubator.html#incu-about">Apply<span><br/>to incubator</span></a>
         </div>
       </div>
-    </nav>
+      <a id="logo-icon" href="./index.html"><img  src="https://mediatech.ventures/wp-content/themes/mtv/img/mtv-logo2-min.png")></a>
+      <a class="navbar-a" href="#request">Reach Us<span><br/>contact</span></a>
+      <a class="navbar-a" href="./edu.html#courses">Register<span><br />for courses</span></a>
+      <a class="navbar-a" href="./incubator.html#incu-about">Apply<span><br/>to incubator</span></a>
+    </section>
 
     <main>
 
       <section id="landing">
-        <div id="large-logo" class="animated rotateInUpRight">
+        <!-- <div id="large-logo" class="animated rotateInUpRight"> -->
           <div id="ring-med" class="animated rotateInUpLeft">
             <div id="ring-sml" class="animated rotateInUpRight">
             </div>
           </div>
-        </div>
+        <!-- </div> -->
         <div id="greeting">
           <h1 class="animated rotateInDownLeft">Lorem Ipsum</h1>
           <h2 class="animated rotateInDownLeft-slow">Lorem sub text ipsum</h2>
